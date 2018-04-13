@@ -32,10 +32,10 @@ mc_CHECK_CFLAGS
 
 CFLAGS_OPTS=""
 if test "x$CFLAGS" = "x"; then
-    CFLAGS_OPTS=" -O2 "
+    CFLAGS_OPTS=" "
 fi
 if test x$USE_MAINTAINER_MODE = xyes; then
-    CFLAGS_OPTS="-g3 -O -ggdb"
+    CFLAGS_OPTS="-g3 -ggdb"
     AC_DEFINE(USE_MAINTAINER_MODE, 1, [Use maintainer mode])
 fi
 
